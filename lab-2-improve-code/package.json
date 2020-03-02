@@ -10,21 +10,25 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "jest": "^24.0.0"
+    "jest": "^24.0.0",
+    "prettier": "1.19.1"
   },
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "prettier": "prettier 'src/**/*.js'",
     "test": "jest",
     "test:coverage": "jest --coverage --silent"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test:coverage"
+      "pre-commit": "npm pretty-quick --staged",
+      "pre-push": "npm run test:coverage"
     }
   },
   "dependencies": {
-    "husky": "^4.2.3"
+    "husky": "^4.2.3",
+    "pretty-quick": "^2.0.1"
   }
 }
