@@ -3,14 +3,16 @@ module.exports = function greeting(i = "my friend") {
     i = [i];
   }
 
-  let nStr = "";
-  for (const j in i) {
+  out = "Hello, ";
+
+  nStr = "";
+  for (j in i) {
     nStr =
       nStr +
       i[j] +
-      (parseInt(j, 10) + 2 === i.length
+      (parseInt(j) + 2 == i.length
         ? ", and "
-        : parseInt(j, 10) + 1 === i.length
+        : parseInt(j) + 1 == i.length
         ? ""
         : ", ");
   }
