@@ -9,8 +9,5 @@ jobs:
           name: Install dependencies
           command: cd lab-2-improve-code && npm install
       - run:
-          name: Check Linting
-          command: cd lab-2-improve-code && npm run lint
-      - run:
           name: Running tests
           command: cd lab-2-improve-code && npm run test:coverage
