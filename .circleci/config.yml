@@ -7,10 +7,10 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: npm ci
+          command: cd lab-2-improve-code && npm install
       - run:
           name: Check Linting
-          command: npm run lint
+          command: cd lab-2-improve-code && npm run lint
       - run:
           name: Running tests
-          command: npm run test:coverage
+          command: cd lab-2-improve-code && npm run test:coverage
