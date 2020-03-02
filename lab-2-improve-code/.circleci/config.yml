@@ -1,0 +1,21 @@
+version: 1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm ci
+      - run:
+          name: Check Linting
+          command: npm run lint
+      - run:
+          name: Running tests
+          command: npm run test:coverage
+workflows:
+  version: 1
+  build_and_test:
+    jobs:
+      - build
