@@ -22,13 +22,16 @@
     "@material-ui/icons": "^3.0.2",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "express": "^4.16.4",
+    "jest": "^25.1.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
     "react-test-renderer": "^16.13.0",
+    "test": "^0.6.0",
     "typeface-roboto": "^0.0.54"
   },
   "devDependencies": {
@@ -45,12 +48,6 @@
     "*.js": [
       "yarn lint --fix",
       "git add"
-    ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!<rootDir>/src/index.js"
     ]
   },
   "eslintIgnore": [

@@ -34,9 +34,11 @@
     "express-pino-logger": "^4.0.0",
     "express-validator": "^5.3.1",
     "forever": "^0.15.3",
+    "jest-mock-axios": "^3.2.0",
     "mongoose": "^5.4.6",
     "mongoose-hidden": "^1.6.0",
     "pino": "^5.11.0",
+    "supertest": "^4.0.2",
     "swagger-ui-express": "^4.0.2"
   },
   "lint-staged": {
@@ -52,8 +54,5 @@
       "!src/index.js",
       "!src/server.js"
     ]
-  },
-  "engines": {
-    "node": "10.x"
   }
 }

@@ -1,0 +1,32 @@
+it(“renders <main> with child and attribute”, () => {
+  const app = shallow(<App />);
+  const todoElement = app.find(Todo);
+  expect(todoElement.props().label).toBe(“What do you want to do?“);
+))};
+
+Render <app> to add an item and expect not null {
+    app = wrapper
+    simulate text = 'hello world'
+    simulate button = button click true
+    toDoList = find elements
+    expect todolist elements != empty array
+}
+
+Render <app> to click the checkbox and expect a true value {
+    app = wrapper
+    simulate text = 'hello world'
+    simulate button = button click true
+
+    simulate button on item checkbox = button click true
+    expect list item checkbox === true
+}
+
+Render <app> to delete an item and expect an empty array {
+    app = wrapper
+    simulate text = 'hello world'
+    simulate button = button click true
+
+    simulate button on item checkbox = button click true
+    simulate button on item delete = button click true
+    expect todolist elements === array empty
+}
